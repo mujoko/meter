@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="login_widget_margin">10px</dimen>
+	<dimen name="login_version_text_size">12dp</dimen>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@android:color/white"
+>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+	>
+	<ImageView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:src="@drawable/rbt_logo_big1"
+	android:paddingTop="0dp"
+	/>	
+	
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Username:" 
+		android:layout_marginLeft="@dimen/login_widget_margin"
+		android:layout_marginRight="@dimen/login_widget_margin"
+		android:textSize="18dp"
+		android:textColor="@android:color/black"
+	/>
+	<EditText 
+		android:id="@+id/login_username"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:hint="Username" 
+		android:layout_marginLeft="@dimen/login_widget_margin"
+		android:layout_marginRight="@dimen/login_widget_margin"
+		android:singleLine="true"
+		android:scrollHorizontally="true"
+	/>	
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Password" 
+		android:layout_marginLeft="@dimen/login_widget_margin"
+		android:layout_marginRight="@dimen/login_widget_margin"
+		android:textSize="18dp"
+		android:textColor="@android:color/black"
+	/>
+	<EditText 
+		android:id="@+id/login_password"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:hint="Password" 
+		android:layout_marginLeft="@dimen/login_widget_margin"
+		android:layout_marginRight="@dimen/login_widget_margin"		
+		android:password="true"
+		android:singleLine="true"
+		android:scrollHorizontally="true"
+	/>	
+	<Button
+		android:id="@+id/loginButton" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Login" 
+		android:layout_marginTop="@dimen/login_widget_margin"
+		android:layout_marginLeft="@dimen/login_widget_margin"
+		android:layout_marginRight="@dimen/login_widget_margin"		
+	/>	
+	
+	<TextView 
+		android:gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_marginLeft="@dimen/login_widget_margin"
+		android:layout_marginRight="@dimen/login_widget_margin"
+		android:layout_marginTop="20px"
+		android:textSize="14dp"
+		android:textColor="@android:color/black"
+		android:text="Please provide your valid username and password to access Meter"
+	/>	
+	<TextView 
+		android:gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_marginLeft="@dimen/login_widget_margin"
+		android:layout_marginRight="@dimen/login_widget_margin"
+		android:layout_marginTop="@dimen/login_widget_margin"
+		android:textSize="@dimen/login_version_text_size"
+		android:textColor="@color/copyright"
+		android:text="@string/copyright"
+	/>	
+		
+	<TextView 
+		android:gravity="center"
+		android:textColor="@color/version"
+		android:textStyle="bold"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_marginLeft="@dimen/login_widget_margin"
+		android:layout_marginRight="@dimen/login_widget_margin"
+		android:layout_marginTop="@dimen/login_widget_margin"
+		android:textSize="@dimen/login_version_text_size"
+		android:text="@string/version"
+	/>		
+
+</LinearLayout>
+	</ScrollView>
