@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Alert" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="TextAppearance" parent="android:TextAppearance">
+    </style>
+
+    <style name="TextAppearance.WorkOrderId">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    
+    <style name="TextAppearance.wo_detail_bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    
+    <style name="TextAppearance.wo_status_new">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/wo_status_new</item>
+    </style>    
+    
+    <style name="TextAppearance.wo_status_ack">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/wo_status_ack</item>
+    </style>      
+    
+    
+     <style name="TextAppearance.wo_detail">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/wo_details</item>
+    </style>   
+    
+    <style name="TextAppearance.WorkOrderDetails_Label">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+
+</resources>

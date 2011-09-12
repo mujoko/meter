@@ -142,10 +142,10 @@ public class LoginActivity extends Activity {
 
 				} else {
 
-					//				showAlertDialog("Your authenticated with system", R.drawable.ic_dialog_info_c);
+									showAlertDialog("Your authenticated with system", R.drawable.ic_dialog_info_c);
 					//				Intent intent = new Intent(LoginActivity.this, MainMenuActivity.class);
-					//				Intent intent = new Intent(LoginActivity.this, HRCNListActivity.class);
-					//	            startActivity(intent);
+									Intent intent = new Intent(LoginActivity.this, AlarmListActivity.class);
+						            startActivity(intent);
 				}
 			} else {
 				showAlertDialog("Invalid Server Name/IP Address or Port Nuber. Please re-check your settings.", R.drawable.stop);

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_layout"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:background="@android:drawable/list_selector_background"
+    android:paddingLeft="6dip"
+    android:paddingTop="2px"
+    android:paddingBottom="2px"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="45dip" >
+
+
+
+   	<!-- icons on the left -->
+    <LinearLayout android:id="@+id/icons_layout"
+        android:orientation="vertical"
+        android:minWidth="41px"
+        android:gravity="top"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+            
+        <ImageView android:id="@+id/ackImage"
+            android:layout_gravity="top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@android:drawable/btn_star_big_on"
+      	/>            
+     <!--    
+        <ImageView android:id="@+id/statusImage"
+            android:layout_gravity="top"
+            android:paddingLeft="7px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@android:drawable/sym_action_call"
+      	/>
+ -->
+    </LinearLayout>
+
+
+
+    <!-- all text -->
+    <LinearLayout android:id="@+id/text_layout"
+        android:orientation="vertical"
+        android:paddingLeft="5dip"
+        android:paddingTop="6dip"
+        android:paddingBottom="6dip"
+        android:layout_weight="1.0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+       <TextView android:id="@+id/hrcnContainerNumber"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/TextAppearance.wo_detail_bold"
+            color="@color/followupdate"
+            android:singleLine="true"
+            android:text=""
+		/>
+		<TextView android:id="@+id/hrcnInspectionDate"
+			     android:layout_height="wrap_content"
+			     android:layout_width="wrap_content"
+			     style="@style/TextAppearance.wo_detail"
+			     color="@color/followupdate"
+			     android:singleLine="true"
+			     android:text=""
+				/>
+
+        <LinearLayout android:id="@+id/expanded_layout"
+            android:orientation="vertical"
+            android:paddingTop="5dip"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+               <TextView android:id="@+id/hrcnId"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            style="@style/TextAppearance.wo_detail"
+            android:gravity="center_vertical"
+            android:text="HRCN Id:"
+     	/>
+       <TextView android:id="@+id/hrcnVoyageNumber"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/TextAppearance.wo_detail"
+            color="@color/followupdate"
+            android:singleLine="false"
+            android:text=""
+		/> 	                
+	
+		
+<TextView android:id="@+id/hrcnTempSetting"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     style="@style/TextAppearance.wo_detail"
+     color="@color/followupdate"
+     android:singleLine="true"
+     android:text=""
+	/>				               
+            <!-- android:orientation="horizontal" -->
+            <LinearLayout android:id="@+id/expanded_buttons"
+                android:orientation="vertical"
+                android:paddingTop="5dip"
+                android:layout_width="fill_parent"
+                android:visibility="visible"
+                android:paddingRight="10dip"
+                android:layout_height="wrap_content">
+                
+                <Button android:id="@+id/btnViewDetails"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/viewdetails"
+                    android:layout_weight="0.5"
+                    />
+                    
+                <Button android:id="@+id/btnShipmentCerts"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="test"
+                />
+                
+            </LinearLayout>
+            
+        </LinearLayout>	
+		
+		
+     </LinearLayout>
+    
+    <View android:id="@+id/importance"
+        android:layout_width="12px"
+        android:layout_height="fill_parent"
+        android:paddingLeft="6dip"
+        android:paddingRight="2dip"
+        android:visibility="gone"
+        android:background="@color/copyright"
+   	/>
+        
+</LinearLayout>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@android:color/white"
+	>
+	<!-- 	<ImageView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:src="@drawable/rbt_logo_big"
+	android:paddingTop="0dp"
+	/>	 -->
+<ListView android:id="@android:id/list"
+    		android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+</LinearLayout>
+

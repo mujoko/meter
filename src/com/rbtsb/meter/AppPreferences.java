@@ -8,7 +8,7 @@ package com.rbtsb.meter;
  */
 public class AppPreferences {
 	/** prefAppServer */
-    public static String prefAppServer = "192.168.1.144";//http://192.168.1.143/
+    public static String prefAppServer = "10.163.80.197";//http://192.168.1.143/
     /** prefAppServerPort */
     public static String prefAppServerPort = "9957";
 }

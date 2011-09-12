@@ -28,11 +28,11 @@ public class AppConstants {
 	/** HRCN_ID */
 	public static final String HRCN_ID = "id";
 	/** CONTAINER_NO_FIELD */
-	public static final String CONTAINER_NO_FIELD = "containerNumber";
+	public static final String MODULE = "module";
 	/** VOYAGE_NO_FIELD */
-	public static final String VOYAGE_NO_FIELD = "voyageNumber";
+	public static final String VOYAGE_NO_FIELD = "levels";
 	/** TEMPERATURE_FIELD */
-	public static final String TEMPERATURE_FIELD = "temperature";
+	public static final String TEMPERATURE_FIELD = "errorCode";
 	/** CREATED_ON_DATE_FIELD */
 	public static final String CREATED_ON_DATE_FIELD = "createdOnString";
 	/** CREATED_TIME_FIELD */
