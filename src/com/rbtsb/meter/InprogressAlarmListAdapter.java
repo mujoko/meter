@@ -23,7 +23,7 @@ import android.widget.TextView;
  * This adapter is used to make rows for HRCNListActivity page.
  * @author asad
  */
-public class InprogressHRCNListAdapter extends ArrayAdapter<Alarm> {
+public class InprogressAlarmListAdapter extends ArrayAdapter<Alarm> {
 	/** earlierRow */
 	private View earlierRow = null;
 	/** pirIntent */
@@ -44,7 +44,7 @@ public class InprogressHRCNListAdapter extends ArrayAdapter<Alarm> {
      *@param textViewResourceId.
      *@param objects.
      */
-	public InprogressHRCNListAdapter(Activity context, int textViewResourceId, List<Alarm> objects) {
+	public InprogressAlarmListAdapter(Activity context, int textViewResourceId, List<Alarm> objects) {
 		super(context, textViewResourceId, objects);
 			this.context = context;
 			this.objects = objects;

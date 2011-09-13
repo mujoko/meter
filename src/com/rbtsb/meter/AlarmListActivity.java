@@ -14,6 +14,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.DialogInterface.OnDismissListener;
 import android.os.Bundle;
+import android.os.Looper;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -32,7 +33,7 @@ public class AlarmListActivity extends ListActivity   {
 	/** objects */
 	List<Alarm> objects = new ArrayList<Alarm>();
 	/** hrcnListAdapter */
-	InprogressHRCNListAdapter hrcnListAdapter;
+	InprogressAlarmListAdapter alarmListAdapter;
 	/** logoutIntent */
 	private Intent logoutIntent = null;
 //	/** pirIntent */
@@ -47,21 +48,22 @@ public class AlarmListActivity extends ListActivity   {
 		super.onCreate(savedInstanceState);
 		// Set content view
 		setContentView(R.layout.hrcn_list);
-		hrcnListAdapter = new InprogressHRCNListAdapter(this, R.layout.hrcn_list_row, objects);
-		setListAdapter(hrcnListAdapter);
+		alarmListAdapter = new InprogressAlarmListAdapter(this, R.layout.hrcn_list_row, objects);
+		setListAdapter(alarmListAdapter);
 		
 		progressDialog = ProgressDialog.show(this, "Working..", "Syncronizing Alarms, Please wait", true, true);
 		
 		progressDialog.setOnDismissListener(new OnDismissListener() {
 //			@Override
 			public void onDismiss(DialogInterface dialog) {
-				populateHRCNList();
+				populateAlarmList();
 			}
 		});		
 		
 		new Thread() {
 			@Override
 			public void run() { 
+				Looper.prepare();
 				try {
 					getInprogressHRCNList();
 					progressDialog.dismiss();
@@ -120,8 +122,8 @@ public class AlarmListActivity extends ListActivity   {
 	/**
 	 * populateHRCNList method.
 	 */
-	private void populateHRCNList() {
-		hrcnListAdapter.notifyDataSetChanged();
+	private void populateAlarmList() {
+		alarmListAdapter.notifyDataSetChanged();
 		toggleViews();
 	}
 	

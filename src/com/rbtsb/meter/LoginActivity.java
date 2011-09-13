@@ -116,7 +116,6 @@ public class LoginActivity extends Activity {
 			public void run() {
 				Looper.prepare();
 				response = authenticateWithServerSecurity(strUsername, strPassword, strImeiNumber);
-
 				progressDialog.dismiss();
 			}
 		}.start();
@@ -143,9 +142,11 @@ public class LoginActivity extends Activity {
 
 				} else {
 
-									showAlertDialog("Your authenticated with system", R.drawable.ic_dialog_info_c);
-									Intent intent = new Intent(LoginActivity.this, AlarmListActivity.class);
-						            startActivity(intent);
+					showAlertDialog("Your authenticated with system", R.drawable.ic_dialog_info_c);
+					
+					
+					Intent intent = new Intent(LoginActivity.this, AlarmListActivity.class);
+					startActivity(intent);
 				}
 			} else {
 				showAlertDialog("Invalid Server Name/IP Address or Port Nuber. Please re-check your settings.", R.drawable.stop);
