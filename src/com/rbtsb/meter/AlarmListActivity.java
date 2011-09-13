@@ -50,7 +50,7 @@ public class AlarmListActivity extends ListActivity   {
 		hrcnListAdapter = new InprogressHRCNListAdapter(this, R.layout.hrcn_list_row, objects);
 		setListAdapter(hrcnListAdapter);
 		
-		progressDialog = ProgressDialog.show(this, "Working..", "Syncronizing inprogress HRCNs, Please wait", true, true);
+		progressDialog = ProgressDialog.show(this, "Working..", "Syncronizing Alarms, Please wait", true, true);
 		
 		progressDialog.setOnDismissListener(new OnDismissListener() {
 //			@Override
@@ -76,7 +76,7 @@ public class AlarmListActivity extends ListActivity   {
 	 * sync method.
 	 */
 	private void sync() {
-		progressDialog = ProgressDialog.show(this, "Working..", "Syncronizing inprogress HRCNs, Please wait", true, true);
+		progressDialog = ProgressDialog.show(this, "Working..", "Syncronizing Alarms, Please wait", true, true);
 		new Thread() {
 			@Override
 			public void run() {

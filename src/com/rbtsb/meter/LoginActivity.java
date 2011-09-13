@@ -17,6 +17,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.DialogInterface.OnDismissListener;
 import android.os.Bundle;
+import android.os.Looper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -113,6 +114,7 @@ public class LoginActivity extends Activity {
 		new Thread() {
 			@Override
 			public void run() {
+				Looper.prepare();
 				response = authenticateWithServerSecurity(strUsername, strPassword, strImeiNumber);
 
 				progressDialog.dismiss();
@@ -135,7 +137,6 @@ public class LoginActivity extends Activity {
 
 				if (!success) {
 					// get the reason
-
 					jsonObject = new JSONObject(jsonObject.getString("errors"));
 					reason = jsonObject.getString("reason");
 					showAlertDialog(reason, R.drawable.stop);
@@ -143,7 +144,6 @@ public class LoginActivity extends Activity {
 				} else {
 
 									showAlertDialog("Your authenticated with system", R.drawable.ic_dialog_info_c);
-					//				Intent intent = new Intent(LoginActivity.this, MainMenuActivity.class);
 									Intent intent = new Intent(LoginActivity.this, AlarmListActivity.class);
 						            startActivity(intent);
 				}
